@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600&display=swap');
+
+:root {
+  font-size: 10px;
+  --b: #0075FF;
+  --r: #CF2C2C;
+  --g: #309E0E;
+  --o: #CD661A;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 1.5rem;
+  width: 300px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.blue {
+  color: var(--b);
+}
+
+.blue::after,
+.blue::before {
+  background-color: var(--b);
+}
+
+.red {
+  color: var(--r);
+}
+
+.red::after,
+.red::before {
+  background-color: var(--r);
+}
+
+.green {
+  color: var(--g);
+}
+
+.green::after,
+.green::before {
+  background-color: var(--g);
+}
+
+.orange {
+  color: var(--o);
+}
+
+.orange::after,
+.orange::before {
+  background-color: var(--o);
+}
+
+.blue::after,
+.red::after,
+.green::after,
+.orange::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  top: 33px;
+  left: 0;
+}
+
+.circle::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 29px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.box::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 29px;
+  left: 0;
+}
+
+.triangle-up-b::before,
+.triangle-up-r::before,
+.triangle-up-g::before,
+.triangle-up-o::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  border: 7px solid;
+  background-color: rgba(255, 255, 255, 0);
+  top: 20px;
+  left: 0;
+}
+
+.triangle-down-b::before,
+.triangle-down-r::before,
+.triangle-down-g::before,
+.triangle-down-o::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  border: 7px solid;
+  background-color: rgba(255, 255, 255, 0);
+  top: 35px;
+  left: 0;
+}
+
+.triangle-up-b::before {
+  border-color: transparent transparent var(--b) transparent;
+}
+
+.triangle-up-r::before {
+  border-color: transparent transparent var(--r) transparent;
+}
+
+.triangle-up-g::before {
+  border-color: transparent transparent var(--g) transparent;
+}
+
+.triangle-up-o::before {
+  border-color: transparent transparent var(--o) transparent;
+}
+
+.triangle-down-b::before {
+  border-color: var(--b) transparent transparent transparent;
+}
+
+.triangle-down-r::before {
+  border-color: var(--r) transparent transparent transparent;
+}
+
+.triangle-down-g::before {
+  border-color: var(--g) transparent transparent transparent;
+}
+
+.triangle-down-o::before {
+  border-color: var(--o) transparent transparent transparent;
+}
